@@ -1,0 +1,67 @@
+java.specification.version=16
+sun.cpu.isalist=amd64
+sun.jnu.encoding=Cp1252
+java.class.path=out
+java.vm.vendor=AdoptOpenJDK
+sun.arch.data.model=64
+user.variant=
+java.vendor.url=https://adoptopenjdk.net/
+java.vm.specification.version=16
+os.name=Windows 10
+sun.java.launcher=SUN_STANDARD
+user.country=DE
+sun.boot.library.path=C:\Users\mm_notebook_neu\.jdks\adopt-openjdk-16.0.1\bin
+sun.java.command=net.mirwaldt.bug.Main
+jdk.debug=release
+sun.cpu.endian=little
+user.home=C:\Users\mm_notebook_neu
+user.language=de
+sun.stderr.encoding=cp850
+java.specification.vendor=Oracle Corporation
+java.version.date=2021-04-20
+java.home=C:\Users\mm_notebook_neu\.jdks\adopt-openjdk-16.0.1
+file.separator=\
+java.vm.compressedOopsMode=Zero based
+line.separator=
+
+sun.stdout.encoding=cp850
+java.vm.specification.vendor=Oracle Corporation
+java.specification.name=Java Platform API Specification
+user.script=
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+java.runtime.version=16.0.1+9
+user.name=mm_notebook_neu
+path.separator=;
+os.version=10.0
+java.runtime.name=OpenJDK Runtime Environment
+file.encoding=Cp1252
+java.vm.name=OpenJDK 64-Bit Server VM
+java.vendor.version=AdoptOpenJDK-16.0.1+9
+java.vendor.url.bug=https://github.com/AdoptOpenJDK/openjdk-support/issues
+java.io.tmpdir=C:\Users\MM_NOT~1\AppData\Local\Temp\
+java.version=16.0.1
+user.dir=C:\Users\mm_notebook_neu\IdeaProjects\TypeInferenceBugOfMethodReferences
+os.arch=amd64
+java.vm.specification.name=Java Virtual Machine Specification
+sun.os.patch.level=
+java.library.path=C:\Users\mm_notebook_neu\.jdks\adopt-openjdk-16.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\
+Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\mm_notebook_neu\.jdks\adopt-openjdk-16.0.
+1\bin;C:\Program Files (x86)\Windows Live\Shared;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\mm_notebook_neu\AppData\Local\Microsoft\Windo
+wsApps;C:\Users\mm_notebook_neu\AppData\Roaming\npm;;.
+java.vm.info=mixed mode, sharing
+java.vendor=AdoptOpenJDK
+java.vm.version=16.0.1+9
+sun.io.unicode.encoding=UnicodeLittle
+java.class.version=60.0
+Exception in thread "main" java.lang.BootstrapMethodError: bootstrap method initialization exception
+        at java.base/java.lang.invoke.BootstrapMethodInvoker.invoke(BootstrapMethodInvoker.java:185)
+        at java.base/java.lang.invoke.CallSite.makeSite(CallSite.java:315)
+        at java.base/java.lang.invoke.MethodHandleNatives.linkCallSiteImpl(MethodHandleNatives.java:281)
+        at java.base/java.lang.invoke.MethodHandleNatives.linkCallSite(MethodHandleNatives.java:271)
+        at net.mirwaldt.bug.Main.main(Main.java:7)
+Caused by: java.lang.invoke.LambdaConversionException: Type mismatch for lambda argument 0: interface net.mirwaldt.bug.StringLiteral is not convertible to interface net.mirwaldt.bug.Variable
+        at java.base/java.lang.invoke.AbstractValidatingLambdaMetafactory.validateMetafactoryArgs(AbstractValidatingLambdaMetafactory.java:293)
+        at java.base/java.lang.invoke.LambdaMetafactory.altMetafactory(LambdaMetafactory.java:501)
+        at java.base/java.lang.invoke.BootstrapMethodInvoker.invoke(BootstrapMethodInvoker.java:138)
+        ... 4 more
+
