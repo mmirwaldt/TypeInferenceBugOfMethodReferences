@@ -1,5 +1,7 @@
 package net.mirwaldt.bug;
 
-public interface Literal {
+import java.io.Serializable;
+
+public interface Literal extends Serializable {
 
 }
