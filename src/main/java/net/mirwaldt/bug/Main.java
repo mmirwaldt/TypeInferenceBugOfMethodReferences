@@ -2,6 +2,7 @@ package net.mirwaldt.bug;
 
 public class Main {
     public static void main(String[] args) {
+        System.getProperties().forEach((key, value) -> System.out.println(key + "=" + value));
         Interpreter interpreter = new DummyInterpreter();
         interpreter.query(MyFact::new); // causes exception
         /*
